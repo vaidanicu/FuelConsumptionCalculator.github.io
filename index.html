@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FuelConsumptionCalculator</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Fuel Consumption Calculator</h1>
+
+      <div class="KM">
+        <label for="km">Distance traveled</label>
+        <input type="number" class="form-control" id="km" min="0" />
+      </div>
+
+      <div class="liter">
+        <label for="liter">Fuel used</label>
+        <input type="number" class="form-control" id="liter" min="0" />
+      </div>
+
+      <div>
+        <button id="calculateBtn" type="button">Calculate</button>
+      </div>
+
+      <div>
+        <h4>
+          Fuel consumption(L/100km):
+          <strong id="FinalConsumption"></strong>
+        </h4>
+      </div>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>
